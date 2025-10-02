@@ -2,9 +2,14 @@
 #include <Windows.h>
 using namespace std;
 
-void privet(string);
 
-int Exercise1() 
+string privet1(string name)
+{
+   string str = name + ", " + "hello!\n";
+   return str;
+}
+
+int Exercise2()
 {
    SetConsoleOutputCP(1251);
    SetConsoleCP(1251);
@@ -12,12 +17,8 @@ int Exercise1()
    string name;
    cout << "What is your name?" << endl;
    cin >> name;
-   //cout << name << ", " << "hello!" << endl;
-   privet(name);
+   string nameOut = privet1(name);
+   cout << nameOut << endl;
+    
    return 0;
-}
-
-void privet(string name)
-{
-   cout << name << ", " << "hello!" << endl;
 }
