@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="..\Lab2\Exercise1.cpp" />
     <ClCompile Include="..\Lab2\Lab3.cpp" />
+    <ClCompile Include="ControlTask1.cpp" />
     <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="Exercise3.cpp" />
     <ClCompile Include="Exercise4.cpp" />
