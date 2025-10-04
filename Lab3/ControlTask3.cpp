@@ -25,8 +25,7 @@ double calculateArea(double a, double b, double c) {
 
 int ControlTask3() {
    SetConsoleOutputCP(1251);
-   SetConsoleCP(1251);
-   setlocale(LC_ALL, "Russian"); // Для корректного отображения русского языка в консоли (опционально)
+   SetConsoleCP(1251);   
 
    cout << "Выберите тип треугольника:\n";
    cout << "1. Равносторонний\n";
