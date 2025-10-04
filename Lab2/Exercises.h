@@ -9,5 +9,6 @@ int Exercise4();
 int Exercise5();
 int ControlTask1();
 int ControlTask2();
+int ControlTask3();
 
 #endif

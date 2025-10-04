@@ -127,6 +127,7 @@
     <ClCompile Include="..\Lab2\Lab3.cpp" />
     <ClCompile Include="ControlTask1.cpp" />
     <ClCompile Include="ControlTask2.cpp" />
+    <ClCompile Include="ControlTask3.cpp" />
     <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="Exercise3.cpp" />
     <ClCompile Include="Exercise4.cpp" />
