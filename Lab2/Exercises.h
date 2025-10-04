@@ -8,5 +8,6 @@ int Exercise3();
 int Exercise4();
 int Exercise5();
 int ControlTask1();
+int ControlTask2();
 
 #endif
