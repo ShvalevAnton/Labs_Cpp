@@ -48,7 +48,7 @@ int ControlTask2()
    for (int i = 0; i < N; i++) {
       file << a[i] << ' ';
    }
-   file << endl;
+   //file << endl;
 
    file.close();
 
