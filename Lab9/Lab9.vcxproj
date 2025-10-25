@@ -126,13 +126,18 @@
     <ClCompile Include="DivideByZeroError.cpp" />
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Exercise2.cpp" />
+    <ClCompile Include="Exercise3.cpp" />
+    <ClCompile Include="ExScore.cpp" />
     <ClCompile Include="Lab9.cpp" />
     <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DivideByZeroError.h" />
     <ClInclude Include="Exercises.h" />
+    <ClInclude Include="ExScore.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
