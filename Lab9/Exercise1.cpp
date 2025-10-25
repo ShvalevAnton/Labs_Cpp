@@ -1,15 +1,9 @@
 #include <iostream>
 #include <Windows.h>
 #include "DivideByZeroError.h"
+#include "Functions.h"
 
 using namespace std;
-
-// Δελενθε
-float quotient(int numl, int num2) 
-{ 
-   if (num2 == 0) throw DivideByZeroError(); 
-   return (float)numl / num2; 
-}
 
 int Exercise1()
 {
