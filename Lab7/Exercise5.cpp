@@ -5,10 +5,12 @@
 #include <vector>
 #include "functions.h"
 
+using namespace std;
+using Tuple = tuple<string, int, double>;
 
 
 
-int Exercise4()
+int Exercise5()
 {
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
@@ -18,7 +20,7 @@ int Exercise4()
 	vector<double> v3 = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6 };
 
 	auto t0 = make_tuple(v1[1], v2[1], v3[1]);
-	
+
 	printTupleOfThree(t0);
 
 	return 0;
