@@ -126,6 +126,7 @@
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Exercise3.cpp" />
     <ClCompile Include="Exercise4.cpp" />
+    <ClCompile Include="Exercise5.cpp" />
     <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>

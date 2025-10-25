@@ -1,5 +1,24 @@
 #include <string>
+#include <fstream>
 #include "Student.h"
+
+// Деструктор Student
+Student::~Student()
+{
+   Student::save();
+}
+// Запись данных о студенте в файл
+void Student::save()
+{
+   ofstream fout("students.txt", ios::app);
+   fout << Student::get_name() << " "
+      << Student::get_last_name() << " ";
+   for (int i = 0; i < 5; ++i) {
+      fout << Student::scores[i] << " ";
+   }
+   fout << endl;
+   fout.close();
+}
 
 // Конструктор Student
 Student::Student() {
