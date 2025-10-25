@@ -22,7 +22,7 @@ int main()
    // Задание 1. Структура Time
    // ControlTask1();
    // Задание 2. Решение квадратного уравнения
-   ControlTask2();
+   // ControlTask2();
    // Задание 3. Решение квадратного уравнения
-   //ControlTask3();
+   ControlTask3();
 }
