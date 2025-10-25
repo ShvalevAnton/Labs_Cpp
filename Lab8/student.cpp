@@ -1,4 +1,21 @@
+#include <string>
 #include "Student.h"
+
+// Конструктор Student
+Student::Student() {
+   // Инициализация
+   name = "";
+   last_name = "";
+   average_score = 0.0;
+   for (int i = 0; i < 5; i++) {
+      scores[i] = 0;
+   }
+}
+Student::Student(string name, string last_name)
+{
+   Student::set_name(name);
+   Student::set_last_name(last_name);
+}
 
 // Установка имени студента
 void Student::set_name(string student_name)

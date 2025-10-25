@@ -8,6 +8,10 @@ using namespace std;
 class Student
 {
 public:
+
+   Student(); // Конструктор без параметров   
+   Student(string name, string last_name); // Конструктор класса Student
+
    // Установка имени студента
    void set_name(string student_name);
 
