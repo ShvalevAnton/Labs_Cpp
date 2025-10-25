@@ -1,34 +1,40 @@
-/* student.h */
-#pragma once /* Защита от двойного подключения заголовочного файла */
+#pragma once
+#ifndef STUDENT_H
+#define STUDENT_H
+
 #include <string>
 using namespace std;
+
 class Student
 {
-	public:
-		// Конструктор класса Student
-		//Student();
-		Student(string, string);
-		// Установка имени студента
-		void set_name(string);
-		// Получение имени студента
-		string get_name();
-		// Установка фамилии студента
-		void set_last_name(string);
-		// Получение фамилии студента
-		string get_last_name();
-		// Установка промежуточных оценок
-		void set_scores(int[]);
-		// Установка среднего балла
-		void set_average_score(double);
-		// Получение среднего балла
-		double get_average_score();
-	private:
-		// Промежуточные оценки
-		int scores[5];
-		// Средний балл
-		double average_score;
-		// Имя
-		string name;
-		// Фамилия
-		string last_name;
+public:
+   // Установка имени студента
+   void set_name(string student_name);
+
+   // Получение имени студента
+   string get_name();
+
+   // Установка фамилии студента
+   void set_last_name(string student_last_name);
+
+   // Получение фамилии студента
+   string get_last_name();
+
+   // Установка промежуточных оценок
+   void set_scores(int student_scores[]);
+
+   // Установка среднего балла
+   void set_average_score(double ball);
+
+   // Получение среднего балла
+   double get_average_score();
+
+private:
+   int scores[5]; // Промежуточные оценки
+   double average_score; // Средний балл
+   string name; // Имя
+   string last_name; // Фамилия
 };
+
+#endif // STUDENT_H
+
