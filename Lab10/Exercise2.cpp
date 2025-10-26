@@ -1,10 +1,10 @@
 #include <iostream>
 #include <Windows.h>
-#include "Student.h"
+#include "StudentEx2.h"
 
 using namespace std;
 
-int Exercise1()
+int Exercise2()
 {
    SetConsoleOutputCP(1251);
    SetConsoleCP(1251);
@@ -13,15 +13,13 @@ int Exercise1()
    string card_category;
 
    // Ввод номера карты с клавиатуры
-   cout << "Введите номер карты: ";
+   cout << "Card number: ";
    cin >> card_number;
    cin.ignore(); // Очистка буфера после ввода числа
 
    // Ввод категории карты
-   cout << "Введите категорию карты: ";
-   getline(cin, card_category);
-
-   IdCard idc(card_number, card_category);
+   cout << "Card category: ";
+   getline(cin, card_category);  
 
    string name;
    string last_name;
@@ -33,7 +31,7 @@ int Exercise1()
    getline(std::cin, last_name);
 
    // Выделение памяти для объекта Student
-   Student* student02 = new Student(name, last_name, &idc);
+   StudentEx2* student02 = new StudentEx2(name, last_name, card_number, card_category);
 
    // Оценки
    int scores[5];
@@ -57,11 +55,7 @@ int Exercise1()
    // Сохраняем средний балл в объект класса Student
    student02->set_average_score(average_score);
    // Выводим данные по студенту
-   cout << "Average ball for " << student02->get_name() << " "
-      << student02->get_last_name() << " is "
-      << student02->get_average_score() << endl;
-   cout << "IdCard: " << student02->getIdCard().getNumber() << endl;
-   cout << "Category: " << student02->getIdCard().getCategory() << endl;
+   student02->display();
 
    delete student02;
 

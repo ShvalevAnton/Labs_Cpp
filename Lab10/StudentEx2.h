@@ -6,16 +6,17 @@
 #include "IdCard.h"
 using namespace std;
 
-class Student
+class StudentEx2
 {
 public:
    // Запись данных о студенте в файл
    void save();
    // Деструктор класса Student
-   ~Student();
+   ~StudentEx2();
 
-   Student(); // Конструктор без параметров   
-   Student(string name, string last_name, IdCard* id); // Конструктор класса Student
+   StudentEx2(); // Конструктор без параметров   
+   StudentEx2(string name, string last_name, int id, string cat); // Конструктор класса Student
+ 
 
    // Установка имени студента
    void set_name(string student_name);
@@ -40,15 +41,20 @@ public:
 
    void setIdCard(IdCard* c);
 
-   IdCard getIdCard();
+   void setIdCard(int id, string c);
+
+   int getIdCard();
+
+   void display();
 
 private:
    int scores[5]; // Промежуточные оценки
    double average_score; // Средний балл
    string name; // Имя
    string last_name; // Фамилия
-   IdCard* iCard; // Идентификационная карточка студента (ассоциации быагрегации)
+   IdCard iCard;
 };
 
 #endif // STUDENT_H
+
 

@@ -29,14 +29,6 @@ Student::~Student()
    Student::save();
 }
 
-void Student::setIdCard(IdCard* c)
-{
-   iCard = c;
-}
-IdCard Student::getIdCard()
-{
-   return *iCard;
-}
 
 // Запись данных о студенте в файл
 void Student::save()
@@ -93,4 +85,13 @@ void Student::set_average_score(double ball)
 double Student::get_average_score()
 {
    return average_score;
+}
+
+void Student::setIdCard(IdCard* c)
+{
+   iCard = c;
+}
+IdCard Student::getIdCard()
+{
+   return *iCard;
 }

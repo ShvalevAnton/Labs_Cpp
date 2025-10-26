@@ -124,14 +124,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Exercise1.cpp" />
+    <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="Lab10.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="StudentEx2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h" />
     <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentEx2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
