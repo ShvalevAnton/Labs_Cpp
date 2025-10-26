@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{303bf33a-ac02-4006-b48a-8ffbeadc08a7}</ProjectGuid>
-    <RootNamespace>Lab7</RootNamespace>
+    <ProjectGuid>{24d0a9f8-f36a-402c-b130-33bb7598c9a4}</ProjectGuid>
+    <RootNamespace>Lab10</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Lab07</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,22 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ControlTask1.cpp" />
-    <ClCompile Include="ControlTask2.cpp" />
-    <ClCompile Include="ControlTask3.cpp" />
     <ClCompile Include="Exercise1.cpp" />
-    <ClCompile Include="Exercise2.cpp" />
-    <ClCompile Include="Exercise3.cpp" />
-    <ClCompile Include="Exercise4.cpp" />
-    <ClCompile Include="Exercise5.cpp" />
-    <ClCompile Include="functions.cpp" />
-    <ClCompile Include="Lab7.cpp" />
-    <ClCompile Include="Structures.cpp" />
+    <ClCompile Include="IdCard.cpp" />
+    <ClCompile Include="Lab10.cpp" />
+    <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h" />
-    <ClInclude Include="functions.h" />
-    <ClInclude Include="structures.h" />
+    <ClInclude Include="IdCard.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
