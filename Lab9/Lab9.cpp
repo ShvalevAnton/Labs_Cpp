@@ -17,5 +17,5 @@ int main()
    // Задание 1. Безопасная реализация класса Triangle
    // ControlTask1();
    // Задание 2. Безопасная реализация класса Time
-   // ControlTask2();
+    ControlTask2();
 }
