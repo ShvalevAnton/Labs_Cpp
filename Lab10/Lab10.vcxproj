@@ -123,18 +123,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ControlTask1.cpp" />
+    <ClCompile Include="Dot.cpp" />
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="IdCard.cpp" />
     <ClCompile Include="Lab10.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentEx2.cpp" />
+    <ClCompile Include="triangle_aggregation.cpp" />
+    <ClCompile Include="triangle_composition.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dot.h" />
     <ClInclude Include="Exercises.h" />
     <ClInclude Include="IdCard.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentEx2.h" />
+    <ClInclude Include="triangle_aggregation.h" />
+    <ClInclude Include="triangle_composition.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
