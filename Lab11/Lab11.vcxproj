@@ -128,12 +128,15 @@
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="Exercise3.cpp" />
+    <ClCompile Include="Exercise4.cpp" />
+    <ClCompile Include="GradeMap.cpp" />
     <ClCompile Include="Lab11.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Distance.h" />
     <ClInclude Include="Distance2.h" />
     <ClInclude Include="Exercises.h" />
+    <ClInclude Include="GradeMap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

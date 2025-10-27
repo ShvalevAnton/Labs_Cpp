@@ -33,6 +33,12 @@
     <ClCompile Include="Exercise3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exercise4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GradeMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h">
@@ -42,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Distance2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GradeMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
