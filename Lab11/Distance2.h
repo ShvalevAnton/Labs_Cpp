@@ -34,6 +34,12 @@ public:
 
 	Distance2 operator- (const Distance2&) const;
 
+	// Дружественные функции для работы с разными типами
+	friend Distance2 operator+ (const Distance2&, float);
+	friend Distance2 operator+ (float, const Distance2&);
+	friend Distance2 operator- (const Distance2&, float);
+	friend Distance2 operator- (float, const Distance2&);
+
 	friend ostream& operator<< (std::ostream& out, const Distance2& dist);
 
 	operator float() const
