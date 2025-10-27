@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ControlTask1.cpp" />
+    <ClCompile Include="ControlTask2.cpp" />
     <ClCompile Include="Distance.cpp" />
     <ClCompile Include="Distance2.cpp" />
     <ClCompile Include="Exercise1.cpp" />
