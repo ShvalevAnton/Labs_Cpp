@@ -24,12 +24,21 @@
     <ClCompile Include="Distance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exercise2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Distance2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Distance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Distance2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
