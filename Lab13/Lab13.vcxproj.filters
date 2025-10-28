@@ -30,7 +30,7 @@
     <ClCompile Include="Audiobook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ControlTask1.cpp">
+    <ClCompile Include="ControlTask1_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
