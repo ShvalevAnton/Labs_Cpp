@@ -124,7 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Audiobook.cpp" />
-    <ClCompile Include="ControlTask1_2.cpp" />
+    <ClCompile Include="ControlTask1.cpp" />
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Lab13.cpp" />
