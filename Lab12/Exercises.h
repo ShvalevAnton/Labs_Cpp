@@ -1,0 +1,15 @@
+#pragma once
+#ifndef EXERCISES_H
+#define EXERCISES_H
+
+int SchoolCpp();
+int Exercise2();
+int Exercise3();
+int Exercise4();
+int Exercise5();
+int ControlTask1();
+int ControlTask2();
+int ControlTask3();
+
+
+#endif
