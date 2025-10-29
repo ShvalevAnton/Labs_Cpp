@@ -27,3 +27,28 @@ void printTupleOfThree(Tuple t)
       << get<1>(t) << ", "
       << get<2>(t) << ")" << endl;
 }
+
+template<class Tuple, std::size_t N>
+struct TuplePrinter {
+   static void print(const Tuple& t)
+   {
+      TuplePrinter<Tuple, N - 1>::print(t);
+      cout << ", " << get<N - 1>(t);
+   }
+};
+
+template<class Tuple>
+struct TuplePrinter<Tuple, 1> {
+   static void print(const Tuple& t)
+   {
+      cout << get<0>(t);
+   }
+};
+
+template<class... Args>
+void printTuple(const tuple<Args...>& t)
+{
+   cout << "(";
+   TuplePrinter<decltype(t), sizeof...(Args)>::print(t);
+   cout << ")" << endl;
+}
