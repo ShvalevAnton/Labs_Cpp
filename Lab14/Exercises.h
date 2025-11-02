@@ -10,6 +10,6 @@ int Exercise5();
 int ControlTask1();
 int ControlTask2();
 int ControlTask3();
-
+int ControlTask4();
 
 #endif
