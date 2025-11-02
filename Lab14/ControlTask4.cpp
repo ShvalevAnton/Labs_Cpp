@@ -75,12 +75,6 @@ int ControlTask4()
 
    std::cout << "\n=== Попытка использования с неподдерживаемым типом ===" << std::endl;
 
-   // Этот код не скомпилируется из-за проверки concept
-   // Раскомментируйте для проверки ошибки компиляции:
-   /*
-   test_sorting(complex_vec, "vector<complex<double>>");
-   */
-
    // Вместо этого покажем сообщение:
    std::cout << "Попытка использовать is_sorted с vector<complex<double>> приведет к ошибке компиляции" << std::endl;
    std::cout << "т.к. std::complex<double> не поддерживает операции < и >" << std::endl;
