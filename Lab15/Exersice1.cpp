@@ -62,39 +62,48 @@ SetConsoleCP(1251);
     // Вывод данных о группе
     cout << "В группе " << gr1957.getName() << " " << k << " ст." << endl;
     gr1957.GroupOut();
+    
+    // Удалить стдента
+    //gr1957.delStudent(student04);
+    // С помощью поиска находим студентка и удааляем его
+    gr1957.delStudent(gr1957.findStudent("Семен", "Смирнов"));
 
-    // Оценки
-    int scores[5];
-    // Сумма всех оценок
-    int sum = 0;
+    // Вывод данных о группе
+    cout << "В группе " << gr1957.getName() << " " << k << " ст." << endl;
+    gr1957.GroupOut();
 
-    // Ввод промежуточных оценок 
-    for (int i = 0; i < 5; ++i) {
-        cout << "Score " << i+1 << ": ";
-        cin >> scores[i];
-        // суммирование
-        sum += scores[i];
-    }
+ //   // Оценки
+ //   int scores[5];
+ //   // Сумма всех оценок
+ //   int sum = 0;
 
-	    // Сохраняем промежуточные оценки в объект класса Student
-    student02->set_scores(scores);
+ //   // Ввод промежуточных оценок 
+ //   for (int i = 0; i < 5; ++i) {
+ //       cout << "Score " << i+1 << ": ";
+ //       cin >> scores[i];
+ //       // суммирование
+ //       sum += scores[i];
+ //   }
 
-	// Считаем средний балл
-    double average_score = sum / 5.0;
-    // Сохраняем средний балл в объект класса Student
-    student02->set_average_score(average_score);
+	//    // Сохраняем промежуточные оценки в объект класса Student
+ //   student02->set_scores(scores);
 
-	//IdCard* card = new IdCard(123);
-	//student02->setIdCard(*card);
-	
-    // Выводим данные по студенту
-    cout << "Average ball for " << student02->get_name() << " "
-         << student02->get_last_name() << " is "
-         << student02->get_average_score() << endl;
-  
+	//// Считаем средний балл
+ //   double average_score = sum / 5.0;
+ //   // Сохраняем средний балл в объект класса Student
+ //   student02->set_average_score(average_score);
 
-	cout << "IdCard: " << student02->getIdCard().getNumber() << endl;
-	cout << "Category: " << student02->getIdCard().getCategory() << endl;
+	////IdCard* card = new IdCard(123);
+	////student02->setIdCard(*card);
+	//
+ //   // Выводим данные по студенту
+ //   cout << "Average ball for " << student02->get_name() << " "
+ //        << student02->get_last_name() << " is "
+ //        << student02->get_average_score() << endl;
+ // 
+
+	//cout << "IdCard: " << student02->getIdCard().getNumber() << endl;
+	//cout << "Category: " << student02->getIdCard().getCategory() << endl;
 
 
      // Удаление объекта student из памяти
