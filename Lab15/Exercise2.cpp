@@ -1,0 +1,112 @@
+#include <iostream>
+#include <windows.h>
+#include <string>
+#include "student_ex2.h"
+#include "IdCard_ex2.h"
+#include "Group_ex2.h"
+
+using namespace std;
+
+int Exercise2()
+{
+   SetConsoleOutputCP(1251);
+   SetConsoleCP(1251);
+
+
+   string name;
+   string last_name;
+   IdCard_ex2* idc = new IdCard_ex2(123456, "Базовый");
+   IdCard_ex2* idc2 = new IdCard_ex2(654321, "Базовый");
+   //int id;
+   //string category;
+
+    // Ввод имени с клавиатуры
+   cout << "Name: ";
+   getline(cin, name);
+
+   // Ввод фамилии
+   cout << "Last name: ";
+   getline(cin, last_name);
+
+   //cout << "Category: ";
+   //getline(cin, category);
+   //idc->setCategory(category);
+
+   //cout << "IdCard :";
+   //cin >> id;
+   //idc->setNumber(id);
+
+       // Передача параметров конструктору
+   Student_ex2* student02 = new Student_ex2(name, last_name, idc);
+   Student_ex2* student03 = new Student_ex2("Петр", "Петров", idc2);
+   Student_ex2* student04 = new Student_ex2("Семен", "Смирнов", idc);
+   Student_ex2* student05 = new Student_ex2("Саша", "Коен", idc2);
+   Student_ex2* student06 = new Student_ex2("Дмитрий", "Ионов", idc);
+
+   // Создание группы 1957
+   Group_ex2 gr1957("1957");
+
+   // Добавлям в группу студентов
+   gr1957.addStudent(student02);
+   gr1957.addStudent(student03);
+   gr1957.addStudent(student04);
+   gr1957.addStudent(student05);
+   gr1957.addStudent(student06);
+
+   // Определяем размер группы
+   int k = gr1957.getSize();
+
+   // Сортировка группы
+   gr1957.GroupSort();
+
+   // Вывод данных о группе
+   cout << "В группе " << gr1957.getName() << " " << k << " ст." << endl;
+   gr1957.GroupOut();
+
+   // Удалить стдента
+   //gr1957.delStudent(student04);
+   // С помощью поиска находим студентка и удааляем его
+   gr1957.delStudent(gr1957.findStudent("Семен", "Смирнов"));
+
+   // Вывод данных о группе
+   cout << "В группе " << gr1957.getName() << " " << k << " ст." << endl;
+   gr1957.GroupOut();
+
+   //   // Оценки
+   //   int scores[5];
+   //   // Сумма всех оценок
+   //   int sum = 0;
+
+   //   // Ввод промежуточных оценок 
+   //   for (int i = 0; i < 5; ++i) {
+   //       cout << "Score " << i+1 << ": ";
+   //       cin >> scores[i];
+   //       // суммирование
+   //       sum += scores[i];
+   //   }
+
+     //    // Сохраняем промежуточные оценки в объект класса Student
+   //   student02->set_scores(scores);
+
+     //// Считаем средний балл
+   //   double average_score = sum / 5.0;
+   //   // Сохраняем средний балл в объект класса Student
+   //   student02->set_average_score(average_score);
+
+     ////IdCard* card = new IdCard(123);
+     ////student02->setIdCard(*card);
+     //
+   //   // Выводим данные по студенту
+   //   cout << "Average ball for " << student02->get_name() << " "
+   //        << student02->get_last_name() << " is "
+   //        << student02->get_average_score() << endl;
+   // 
+
+     //cout << "IdCard: " << student02->getIdCard().getNumber() << endl;
+     //cout << "Category: " << student02->getIdCard().getCategory() << endl;
+
+
+       // Удаление объекта student из памяти
+   delete student02;
+   return 0;
+}

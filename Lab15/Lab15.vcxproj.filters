@@ -13,22 +13,46 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Exercise1">
+      <UniqueIdentifier>{7569889b-41e9-4f6f-a9a8-1cc8f95ea769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exercise2">
+      <UniqueIdentifier>{60f110d7-d143-4dea-90c1-10ace6139da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exercise1">
+      <UniqueIdentifier>{1c8ce268-debd-4df9-ab56-12b981fc5c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exercise2">
+      <UniqueIdentifier>{a51b3377-1164-488d-b5dd-9ff88aa04156}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab15.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Group.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Exercise2.cpp">
+      <Filter>Source Files\Exercise2</Filter>
     </ClCompile>
     <ClCompile Include="IdCard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="student.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Exercise1</Filter>
     </ClCompile>
     <ClCompile Include="Exersice1.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Exercise1</Filter>
+    </ClCompile>
+    <ClCompile Include="Group.cpp">
+      <Filter>Source Files\Exercise1</Filter>
+    </ClCompile>
+    <ClCompile Include="student.cpp">
+      <Filter>Source Files\Exercise1</Filter>
+    </ClCompile>
+    <ClCompile Include="Group_ex2.cpp">
+      <Filter>Source Files\Exercise2</Filter>
+    </ClCompile>
+    <ClCompile Include="IdCard_ex2.cpp">
+      <Filter>Source Files\Exercise2</Filter>
+    </ClCompile>
+    <ClCompile Include="student_ex2.cpp">
+      <Filter>Source Files\Exercise2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,13 +60,22 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Group.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Exercise1</Filter>
     </ClInclude>
     <ClInclude Include="IdCard.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Exercise1</Filter>
     </ClInclude>
     <ClInclude Include="student.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Exercise1</Filter>
+    </ClInclude>
+    <ClInclude Include="Group_ex2.h">
+      <Filter>Header Files\Exercise2</Filter>
+    </ClInclude>
+    <ClInclude Include="IdCard_ex2.h">
+      <Filter>Header Files\Exercise2</Filter>
+    </ClInclude>
+    <ClInclude Include="student_ex2.h">
+      <Filter>Header Files\Exercise2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

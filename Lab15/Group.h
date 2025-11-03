@@ -28,3 +28,4 @@ public:
 	void setName(string newName);
 	string getName();
 };
+

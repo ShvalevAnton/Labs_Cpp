@@ -123,17 +123,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="Exersice1.cpp" />
     <ClCompile Include="Group.cpp" />
+    <ClCompile Include="Group_ex2.cpp" />
     <ClCompile Include="IdCard.cpp" />
+    <ClCompile Include="IdCard_ex2.cpp" />
     <ClCompile Include="Lab15.cpp" />
     <ClCompile Include="student.cpp" />
+    <ClCompile Include="student_ex2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h" />
     <ClInclude Include="Group.h" />
+    <ClInclude Include="Group_ex2.h" />
     <ClInclude Include="IdCard.h" />
+    <ClInclude Include="IdCard_ex2.h" />
     <ClInclude Include="student.h" />
+    <ClInclude Include="student_ex2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
