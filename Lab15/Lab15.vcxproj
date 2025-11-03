@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ControlTask1.cpp" />
+    <ClCompile Include="ControlTask2.cpp" />
     <ClCompile Include="Exercise2.cpp" />
     <ClCompile Include="Exersice1.cpp" />
     <ClCompile Include="Group.cpp" />
