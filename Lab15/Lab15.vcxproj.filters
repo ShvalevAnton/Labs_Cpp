@@ -54,6 +54,9 @@
     <ClCompile Include="student_ex2.cpp">
       <Filter>Source Files\Exercise2</Filter>
     </ClCompile>
+    <ClCompile Include="ControlTask1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises.h">
